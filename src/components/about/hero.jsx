@@ -15,7 +15,7 @@ export default function Aboutus() {
                         />
                     </div>
                 </div>
-    
+              
                 {/* Overlay with text */}
                 <div className="absolute inset-0 z-10 flex flex-col justify-center items-center text-center px-4 md:mt-5 lg:px-8">
                     <h1 className="text-white text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">

@@ -12,6 +12,11 @@ const annualFunctionImages = [
   { src: "/gallery/annual/anual6.webp", label: "Annual Celebration" },
   { src: "/gallery/annual/anual7.webp", label: "Mehndi Competition" },
   { src: "/gallery/annual/anual8.webp", label: "Mehndi Competition" },
+  { src: "/gallery/annual/annual4.jpg", label: "Annual Celebration" },
+  { src: "/gallery/annual/anuual.jpg", label: "Annual Celebration" },
+  { src: "/gallery/annual/annualf4.jpg", label: "Annual Celebration" },
+  { src: "/gallery/annual/annualf5.jpg", label: "Annual Celebration" },
+
 ];
 
 export default function Album2() {

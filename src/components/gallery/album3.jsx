@@ -13,7 +13,11 @@ const classImages = [
   { src: "/gallery/class/class7.jpg", label: "learning time" },
   { src: "/gallery/img3.jpg", label: "Math Practice" },
   { src: "/gallery/class/class10.webp", label: "Discussion Time" },
+  { src: "/gallery/class/classf1.jpg", label: "Discussion Time" },
+  { src: "/gallery/class/classf2.jpg", label: "Discussion Time" },
+  { src: "/gallery/class/classf3.jpg", label: "Discussion Time" },
   { src: "/gallery/class/class11.jpg", label: "Discussion Time" },
+ 
 ];
 
 export default function Album3() {

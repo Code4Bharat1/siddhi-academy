@@ -12,6 +12,9 @@ const picnicImages = [
   { src: "/gallery/picnic/picnic5.webp", label: "Nature Walk" },
   { src: "/gallery/picnic/picnic6.webp", label: "Water Games" },
   { src: "/gallery/picnic/picnic7.jpg", label: "Water park" },
+  { src: "/gallery/picnic/picnicf1.jpg", label: "Nature Walk" },
+  { src: "/gallery/picnic/picnicf2.jpg", label: "Water Games" },
+  { src: "/gallery/picnic/picnic3.jpg", label: "Water park" },
 ];
 
 export default function PicnicAlbum() {

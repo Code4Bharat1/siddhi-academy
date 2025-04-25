@@ -6,10 +6,10 @@ export default function ContactUsSection() {
     return (
         <div className="relative w-full h-[300px] sm:h-[400px] md:h-screen overflow-hidden">
             {/* Background Image */}
-            <div className="absolute inset-0  bg-black/50 z-0">
+            <div className="absolute inset-0   z-0">
                 <div className="relative z-0 w-full h-full">
                     <Image
-                        src="/contactus_PhotoGrid.png"
+                        src="/cont.png"
                         alt="Hero Background"
                         fill
                         style={{ objectFit: 'cover' }}
@@ -17,9 +17,10 @@ export default function ContactUsSection() {
                     />
                 </div>
             </div>
+            <div className="absolute inset-0 bg-black/10 z-10" />
 
             {/* Overlay with text */}
-            <div className="absolute inset-0 z-10 flex flex-col  justify-center items-center text-center px-4 md:mt-2VZ lg:px-8">
+            <div className="absolute inset-0 z-10 flex flex-col  justify-center items-center text-center px-4 md:-mt-10 lg:px-8">
                 <h1 className="text-white text-xl sm:text-2xl md:text-4xl lg:text-6xl font-bold">
                 Contact Us
                 </h1>
