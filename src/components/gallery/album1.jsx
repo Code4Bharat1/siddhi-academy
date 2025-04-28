@@ -17,7 +17,7 @@ const picnicImages = [
   { src: "/gallery/picnic/picnic3.jpg", label: "Water park" },
 ];
 
-export default function PicnicAlbum() {
+export default function Album1() {
   const [shuffledImages, setShuffledImages] = useState(picnicImages);
   const [selectedImage, setSelectedImage] = useState(null);
 
