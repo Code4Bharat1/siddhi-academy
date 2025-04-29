@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
-
+import Image from 'next/image';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const router = useRouter();
@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto py-3 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2 py-2">
-          <img src="/logo.png" alt="Siddhi Academy Logo" className="h-12" />
+          <img src="/logo.png" alt="Siddhi Academy Logo"  className="h-12 " />
         </div>
 
         {/* Hamburger Icon - Mobile */}

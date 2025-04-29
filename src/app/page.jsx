@@ -9,6 +9,7 @@ import HeroSection from '@/components/home/hero'
 
 import Logo from '@/components/home/logoscrolling'
 
+
 import SiddhiSection from '@/components/home/section2'
 import WhatsAppButton from '@/components/home/WhatsApp'
 
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div className='bg-white'>
       <HeroSection />
+    
       <WhatsAppButton/>
       <Logo />
       <SiddhiSection />

@@ -1,6 +1,8 @@
-"use client"
-import React from 'react';
-import { motion } from 'framer-motion';
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import Head from "next/head"; // Import Head for SEO
+import Image from "next/image"; // Import Image from next/image
 
 const cardVariant = {
   hidden: { opacity: 0, scale: 0.8 },
@@ -8,17 +10,38 @@ const cardVariant = {
 };
 
 const iconVariant = {
-  hover: { scale: 1.1, transition: { type: 'spring', stiffness: 300 } },
+  hover: { scale: 1.1, transition: { type: "spring", stiffness: 300 } },
 };
 
 export default function MissionInspirationVision() {
   return (
     <div>
-      <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-30 px-4 py-10 bg-white">
-        
+      {/* SEO Metadata */}
+      <Head>
+        <title>Our Mission, Inspiration & Vision - Quality Education</title>
+        <meta
+          name="description"
+          content="Learn about our mission to provide quality education, the inspiration behind our journey, and our vision for a better future."
+        />
+        <meta
+          name="keywords"
+          content="education, mission, inspiration, vision, quality learning, student growth, guidance"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Our Mission, Inspiration & Vision" />
+        <meta
+          property="og:description"
+          content="Discover our mission to empower students, our inspirational journey, and our vision for shaping the future of education."
+        />
+        <meta property="og:image" content="/images/mission-vision-banner.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/mission-vision" />
+        <link rel="canonical" href="https://yourwebsite.com/mission-vision" />
+      </Head>
+
+      <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-30 px-4 py-10 bg-white select-none">
         {/* Our Mission */}
         <motion.div
-          className="w-full md:w-90 p-6 min-h-[300px] bg-[#0038D1] text-white rounded-tr-2xl rounded-bl-2xl  transition-all duration-300 hover:bg-[#FF0000] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
+          className="w-full md:w-90 p-6 min-h-[300px] bg-[#0038D1] text-white rounded-tr-2xl rounded-bl-2xl transition-all duration-300 hover:bg-[#FF0000] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
           variants={cardVariant}
           initial="hidden"
           whileInView="visible"
@@ -32,7 +55,7 @@ export default function MissionInspirationVision() {
 
         {/* Our Inspiration */}
         <motion.div
-          className="w-full md:w-90 p-6 min-h-[300px] bg-[#FF0000] text-white rounded-tr-2xl rounded-bl-2xl  transition-all duration-300 hover:bg-[#0038D1] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
+          className="w-full md:w-90 p-6 min-h-[300px] bg-[#FF0000] text-white rounded-tr-2xl rounded-bl-2xl transition-all duration-300 hover:bg-[#0038D1] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
           variants={cardVariant}
           initial="hidden"
           whileInView="visible"
@@ -46,7 +69,7 @@ export default function MissionInspirationVision() {
 
         {/* Our Vision */}
         <motion.div
-          className="w-full md:w-90 p-6 min-h-[300px] bg-[#0038D1] text-white rounded-tr-2xl rounded-bl-2xl  transition-all duration-300 hover:bg-[#FF0000] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
+          className="w-full md:w-90 p-6 min-h-[300px] bg-[#0038D1] text-white rounded-tr-2xl rounded-bl-2xl transition-all duration-300 hover:bg-[#FF0000] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"
           variants={cardVariant}
           initial="hidden"
           whileInView="visible"
@@ -66,17 +89,18 @@ export default function MissionInspirationVision() {
 
         {/* Grid Layout */}
         <div className="grid grid-cols-3 sm:grid-cols-2 md:grid-cols-5 lg:grid-cols-5 gap-2 justify-items-center bg-white mx-10 md:mx-10">
-          
           {/* Subject Related Guidance */}
           <motion.div
             className="flex flex-col items-center"
             whileHover="hover"
             variants={iconVariant}
           >
-            <img
-              src="/sub.png"
+            <Image
+              src="/sub.jpg"
               alt="Subject Related Guidance"
-              className="w-30 h-24 mt-1 md:-mt-6 object-contain"
+              width={120} // Set width and height
+              height={90}
+              className="mt-1 md:-mt-8 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Subject Related Guidance
@@ -89,10 +113,12 @@ export default function MissionInspirationVision() {
             whileHover="hover"
             variants={iconVariant}
           >
-            <img
+            <Image
               src="/smart.png"
               alt="Smart Study Concept"
-              className="w-20 h-20 mt-5 md:mt-0 object-contain"
+              width={70}
+              height={80}
+              className="mt-5 md:-mt-1 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Smart Study Concept
@@ -105,10 +131,12 @@ export default function MissionInspirationVision() {
             whileHover="hover"
             variants={iconVariant}
           >
-            <img
+            <Image
               src="/e=mc.png"
               alt="Digitalized classrooms"
-              className="w-25 h-25 md:-mt-5 object-contain"
+              width={100}
+              height={100}
+              className="md:mt-0 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Digitalized classrooms
@@ -121,10 +149,12 @@ export default function MissionInspirationVision() {
             whileHover="hover"
             variants={iconVariant}
           >
-            <img
+            <Image
               src="/result.png"
               alt="Tests & Assessment"
-              className="w-20 h-20 mt-4 md:mt-0 object-contain"
+              width={80}
+              height={80}
+              className="mt-4 md:mt-2 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Tests & Assessment
@@ -137,16 +167,17 @@ export default function MissionInspirationVision() {
             whileHover="hover"
             variants={iconVariant}
           >
-            <img
+            <Image
               src="/folder.png"
               alt="Personalized Study Plan"
-              className="w-20 h-25 md:-mt-5 object-contain"
+              width={80}
+              height={100}
+              className="md:-mt-5 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Personalized Study Plan
             </p>
           </motion.div>
-
         </div>
       </div>
     </div>

@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CategoryScroll } from './categoryscroll';
+import Head from 'next/head'; // Import Next.js Head component for SEO
+import Image from 'next/image';
 
 const annualFunctionImages = [
   { src: "/gallery/annual/anual1.webp", label: "Annual Celebration" },
@@ -16,7 +18,6 @@ const annualFunctionImages = [
   { src: "/gallery/annual/anuual.jpg", label: "Annual Celebration" },
   { src: "/gallery/annual/annualf4.jpg", label: "Annual Celebration" },
   { src: "/gallery/annual/annualf5.jpg", label: "Annual Celebration" },
-
 ];
 
 export default function Album2() {
@@ -30,6 +31,23 @@ export default function Album2() {
 
   return (
     <div className="max-w-6xl mx-auto py-10 px-4 mb-20">
+      {/* Adding SEO meta tags */}
+      <Head>
+        <title>Annual Function Memories - Gallery</title>
+        <meta
+          name="description"
+          content="Explore memories from our annual function, including photos of the annual celebration and mehndi competition."
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Annual Function Memories" />
+        <meta
+          property="og:description"
+          content="Explore memories from our annual function, including photos of the annual celebration and mehndi competition."
+        />
+        <meta property="og:image" content="/path/to/default-image.jpg" />
+        <meta property="og:url" content="https://yourwebsite.com/annual-function-gallery" />
+      </Head>
+
       <CategoryScroll />
 
       <motion.h2
@@ -51,11 +69,15 @@ export default function Album2() {
             className="relative shadow-md overflow-hidden group cursor-pointer"
             onClick={() => setSelectedImage(img)}
           >
-            <img
-              src={img.src}
-              alt={img.label}
-              className="w-full h-80 object-cover rounded-md transition-transform transform group-hover:scale-125 group-hover:opacity-90"
-            />
+            <div className="relative w-full h-80 rounded-md overflow-hidden group">
+              <Image
+                src={img.src}
+                alt={img.label}  // Ensure alt text is added for SEO
+                width={500}  // Add appropriate width
+                height={320} // Add appropriate height
+                className="w-full h-full object-cover transition-transform transform group-hover:scale-125 group-hover:opacity-90"
+              />
+            </div>
             <div className="absolute bottom-0 left-0 right-0 bg-[#0038D1] bg-opacity-70 text-white text-center text-sm py-2 rounded-b-md">
               {img.label}
             </div>
@@ -79,11 +101,15 @@ export default function Album2() {
                 ✖
               </button>
 
-              <img
-                src={selectedImage.src}
-                alt={selectedImage.label}
-                className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-xl"
-              />
+              <div className="relative w-full max-h-[80vh]">
+                <Image
+                  src={selectedImage.src}
+                  alt={selectedImage.label}  // Ensure alt text is added for SEO
+                  width={1000}  // Add appropriate width
+                  height={600}  // Add appropriate height
+                  className="w-full h-auto object-contain rounded-lg shadow-xl"
+                />
+              </div>
               <p className="text-white text-center mt-4 text-lg">{selectedImage.label}</p>
             </div>
           </motion.div>

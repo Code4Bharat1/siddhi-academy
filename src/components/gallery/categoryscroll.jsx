@@ -2,6 +2,8 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { usePathname } from 'next/navigation';
+import Head from 'next/head'; // Import Head for SEO
+import Image from 'next/image';
 
 const scrollBlocks = [
   { src: "/gallery/img1.webp", label: "Picnic", link: "/gallery/album1" },
@@ -17,6 +19,17 @@ export function CategoryScroll() {
 
   return (
     <div className="py-6 px-4 mb-10">
+      {/* SEO Head component */}
+      <Head>
+        <title>Explore Memorable Moments - Gallery</title>
+        <meta name="description" content="Browse through our gallery to explore memorable moments from various events like picnics, annual functions, classes, achievements, and more." />
+        <meta name="keywords" content="Gallery, Picnic, Annual Function, Classes, Achievement, Extra Curriculam, Opening Ceremony, Events" />
+        <meta property="og:title" content="Explore Memorable Moments - Gallery" />
+        <meta property="og:description" content="Browse through our gallery to explore memorable moments from various events like picnics, annual functions, classes, achievements, and more." />
+        <meta property="og:image" content="/gallery/img1.webp" />
+        <meta property="og:type" content="website" />
+      </Head>
+
       <h2 className="text-2xl font-semibold mb-4 text-center sm:text-left">
         Explore Our Memorable Moments
       </h2>
@@ -35,7 +48,6 @@ export function CategoryScroll() {
             <motion.div
               key={index}
               variants={{
-                
                 visible: { opacity: 1, y: 0 },
               }}
               transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -47,10 +59,12 @@ export function CategoryScroll() {
                 }`}
               >
                 <div className="relative w-full h-32 sm:h-40 rounded-2xl overflow-hidden bg-white">
-                  <img
+                  <Image
                     src={block.src}
                     alt={block.label}
-                    className="w-full h-full  z-10"
+                    width={600}
+                    height={320}
+                    className="w-full h-full z-10"
                   />
 
                   {/* Semi-transparent black label background */}

@@ -2,14 +2,15 @@
 import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CategoryScroll } from './categoryscroll';
+import Head from 'next/head'; // Import Head from Next.js
+import Image from 'next/image';
 
 const openingCeremonyImages = [
-  { src: "/gallery/openingceremony/opening1.webp", label: "opening ceremony" },
-  { src: "/gallery/openingceremony/opening2.webp", label: "opening ceremony" },
-  { src: "/gallery/openingceremony/opening3.webp", label: "opening ceremony" },
-  { src: "/gallery/openingceremony/opening4.webp", label: "opening ceremony" },
-  { src: "/gallery/openingceremony/opening5.webp", label: "opening ceremony" },
-  
+  { src: "/gallery/openingceremony/opening1.webp", label: "Opening Ceremony" },
+  { src: "/gallery/openingceremony/opening2.webp", label: "Opening Ceremony" },
+  { src: "/gallery/openingceremony/opening3.webp", label: "Opening Ceremony" },
+  { src: "/gallery/openingceremony/opening4.webp", label: "Opening Ceremony" },
+  { src: "/gallery/openingceremony/opening5.webp", label: "Opening Ceremony" },
 ];
 
 export default function Album6() {
@@ -23,6 +24,17 @@ export default function Album6() {
 
   return (
     <div className="max-w-6xl mx-auto py-10 px-4 mb-20">
+      {/* SEO Head component */}
+      <Head>
+        <title>Opening Ceremony Gallery</title>
+        <meta name="description" content="Explore the exciting moments from the opening ceremony with this gallery showcasing various activities and celebrations." />
+        <meta name="keywords" content="Opening Ceremony, gallery, events, celebration, activities, opening ceremony images" />
+        <meta property="og:title" content="Opening Ceremony Gallery" />
+        <meta property="og:description" content="Explore the exciting moments from the opening ceremony with this gallery showcasing various activities and celebrations." />
+        <meta property="og:image" content="/gallery/openingceremony/opening1.webp" />
+        <meta property="og:type" content="website" />
+      </Head>
+
       <CategoryScroll />
 
       <motion.h2
@@ -44,9 +56,11 @@ export default function Album6() {
             className="relative shadow-md overflow-hidden group cursor-pointer"
             onClick={() => setSelectedImage(img)}
           >
-            <img
+            <Image
               src={img.src}
               alt={img.label}
+              width={600}
+              height={480}
               className="w-full h-80 object-cover rounded-md transition-transform transform group-hover:scale-125 group-hover:opacity-90"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-[#0038D1] bg-opacity-60 text-white text-center text-sm py-2 rounded-b-md">
@@ -72,9 +86,11 @@ export default function Album6() {
                 ✖
               </button>
 
-              <img
+              <Image
                 src={selectedImage.src}
                 alt={selectedImage.label}
+                width={1200}
+                height={800}
                 className="w-full h-auto max-h-[80vh] object-contain rounded-lg shadow-xl"
               />
               <p className="text-white text-center mt-4 text-lg">{selectedImage.label}</p>

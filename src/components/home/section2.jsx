@@ -3,6 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Head from 'next/head';  // Import Head for SEO
 import MissionInspirationVision from './mission';
 
 const textVariants = {
@@ -18,6 +19,28 @@ const imageVariants = {
 export default function SiddhiSection() {
   return (
     <div className='bg-white mb-30 md:mb-30'>
+      {/* SEO Metadata */}
+      <Head>
+        <title>Siddhi Academy - Your Path to Academic Excellence</title>
+        <meta
+          name="description"
+          content="At Siddhi Academy, we provide excellent coaching for SSC, Commerce, and Arts, with a focus on holistic development and result-oriented methods."
+        />
+        <meta
+          name="keywords"
+          content="Siddhi Academy, SSC Coaching, Commerce Coaching, Arts Coaching, Thane, Academic Excellence, Student Growth, Mentorship"
+        />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Siddhi Academy - Your Path to Academic Excellence" />
+        <meta
+          property="og:description"
+          content="At Siddhi Academy, we help students achieve their academic goals with a focus on holistic growth and guidance in SSC, Commerce, and Arts."
+        />
+        <meta property="og:image" content="/images/student2.png" />
+        <meta property="og:url" content="https://yourwebsite.com/siddhi-academy" />
+        <link rel="canonical" href="https://yourwebsite.com/siddhi-academy" />
+      </Head>
+
       <motion.h2
         className="text-xl md:text-3xl font-semibold text-center mb-4 mt-5 md:mt-15"
         initial={{ opacity: 0, y: -30 }}
@@ -35,18 +58,18 @@ export default function SiddhiSection() {
           initial="hidden"
           animate="visible"
         >
-          <p className="text-sm md:text-xl leading-relaxed">
+          <p className="text-sm md:text-xl leading-relaxed select-none">
             At <span className="font-semibold text-red-600">Siddhi Academy</span>, your child’s growth and success are at the core of everything we do. Since our inception in 
             <span className="font-semibold text-red-600"> 2008</span>, we’ve built a legacy rooted in trust, dedication, and academic excellence—shaping young minds by helping them balance 
             <span className="font-semibold text-red-600"> knowledge with application, care with collaboration</span>, and 
             <span className="font-semibold text-red-600"> today’s goals with tomorrow’s dreams.</span>
           </p>
-          <p className="text-sm md:text-xl leading-relaxed">
+          <p className="text-sm md:text-xl leading-relaxed  select-none">
             Recognized as a leading coaching institute in <span className="font-semibold text-red-600">Thane</span> for 
             <span className="font-semibold text-red-600"> SSC, Commerce, and Arts</span>, Siddhi Academy stands out for its 
             <span className="font-semibold text-red-600"> student-first approach, result-oriented methods,</span> and holistic development programs.
           </p>
-          <p className="text-sm md:text-xl leading-relaxed">
+          <p className="text-sm md:text-xl leading-relaxed  select-none">
             At Siddhi Academy, we’re more than educators—we’re 
             <span className="font-semibold text-red-600"> mentors, guides, and a second family</span>. Because real education is about nurturing 
             <span className="font-semibold text-red-600"> confident, capable individuals</span> ready to lead the future.
@@ -60,9 +83,9 @@ export default function SiddhiSection() {
           initial="hidden"
           animate="visible"
         >
-          <Image
+          <img
             src="/student2.png"
-            alt="Students"
+            alt="Siddhi Academy Students"
             width={500}
             height={350}
             className="w-[300px] h-[200px] md:w-[800px] md:h-[500px]"
