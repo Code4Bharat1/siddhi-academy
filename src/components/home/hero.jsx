@@ -37,8 +37,8 @@ export default function HeroSection() {
                         <Image
                             src="/home.jpg"
                             alt="Hero Background"
-                            layout="fill" // Makes the image fill the container
-                            objectFit="cover" // Ensures the image covers the area properly
+                            fill // Replaces 'layout="fill"'
+                            style={{ objectFit: "cover" }} // Replaces 'objectFit="cover"'
                             priority
                         />
                     </div>

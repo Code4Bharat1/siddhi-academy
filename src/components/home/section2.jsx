@@ -83,12 +83,12 @@ export default function SiddhiSection() {
           initial="hidden"
           animate="visible"
         >
-          <img
+          <Image
             src="/student2.png"
             alt="Siddhi Academy Students"
-            width={500}
-            height={350}
-            className="w-[300px] h-[200px] md:w-[800px] md:h-[500px]"
+            width={634} // Natural width of the image
+            height={573} // Natural height of the image
+            className="w-[300px] aspect-[634/573] md:w-[800px] object-contain"
           />
         </motion.div>
       </div>

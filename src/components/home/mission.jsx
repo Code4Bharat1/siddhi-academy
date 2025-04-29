@@ -48,7 +48,7 @@ export default function MissionInspirationVision() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-2 text-center">Our Mission</h2>
-          <p className="text-lg text-center">
+          <p className="text-2xl font-medium text-center">
             To provide a strong academic foundation for students, with equal focus on discipline, confidence, values, and life skills.
           </p>
         </motion.div>
@@ -62,7 +62,7 @@ export default function MissionInspirationVision() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-2 text-center">Our Inspiration</h2>
-          <p className="text-lg text-center mt-2">
+          <p className="text-xl text-center font-medium  mt-2">
             Our journey started with the desire to bring quality education to students who lack proper guidance. We’ve seen the difference a good mentor can make – and we strive to be that difference.
           </p>
         </motion.div>
@@ -76,7 +76,7 @@ export default function MissionInspirationVision() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl font-bold mb-2 text-center">Our Vision</h2>
-          <p className="text-lg text-center">
+          <p className="text-2xl text-center font-medium">
             To build a platform where every student can learn, grow, and succeed with the right guidance and modern teaching tools – true to our motto “Shikale Tar Mi”.
           </p>
         </motion.div>
@@ -96,7 +96,7 @@ export default function MissionInspirationVision() {
             variants={iconVariant}
           >
             <Image
-              src="/sub.jpg"
+              src="/Sub.jpg"
               alt="Subject Related Guidance"
               width={120} // Set width and height
               height={90}

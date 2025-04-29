@@ -79,7 +79,7 @@ const Footer = () => {
               <p className="text-md font-semibold">Connect With Us</p>
               <a href="https://www.facebook.com/share/18dANBPSxk/" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/facebook1.svg" 
+                  src="/facebook.svg" 
                   alt="Facebook" 
                   className="h-10 w-10" 
                   width={40} 
@@ -88,16 +88,16 @@ const Footer = () => {
               </a>
               <a href="https://www.instagram.com/siddhi.academy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/instagram1.svg" 
+                  src="/insta.svg" 
                   alt="Instagram" 
                   className="h-10 w-10" 
                   width={40} 
                   height={40} 
                 />
               </a>
-              <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/siddhi-academy-631592361/" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/linkedin1.svg" 
+                  src="/linkedin.svg" 
                   alt="LinkedIn" 
                   className="h-10 w-10" 
                   width={40} 
@@ -159,7 +159,7 @@ const Footer = () => {
             <div className="flex gap-3 mt-2">
               <a href="https://www.facebook.com/share/18dANBPSxk/" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/facebook1.svg" 
+                  src="/facebook.svg" 
                   alt="Facebook" 
                   className="h-8 w-8" 
                   width={32} 
@@ -168,16 +168,16 @@ const Footer = () => {
               </a>
               <a href="https://www.instagram.com/siddhi.academy?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/instagram1.svg" 
+                  src="/insta.svg" 
                   alt="Instagram" 
                   className="h-8 w-8" 
                   width={32} 
                   height={32} 
                 />
               </a>
-              <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/siddhi-academy-631592361/" target="_blank" rel="noopener noreferrer">
                 <Image 
-                  src="/linkedin1.svg" 
+                  src="/linkedin.svg" 
                   alt="LinkedIn" 
                   className="h-8 w-8" 
                   width={32} 
