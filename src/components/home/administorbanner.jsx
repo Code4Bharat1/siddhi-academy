@@ -93,7 +93,7 @@ export default function AdmissionBanner() {
           </div>
 
           {/* Right Side (Testimonials) */}
-          <div className="text-white w-full md:w-3/3 -mt-15 md:mt-0 ml-30 md:ml-0 text-center md:pl-10 overflow-hidden z-20 mr-30 select-none">
+          <div className="text-white w-full md:w-3/3 -mt-15 md:mt-0 ml-30 md:ml-0 text-center md:pl-10 overflow-hidden z-20 mr-30 ">
             <h3 className="text-xl sm:text-3xl md:text-3xl font-bold font-Hind mb-4">
               Real Stories. Real Results.
             </h3>

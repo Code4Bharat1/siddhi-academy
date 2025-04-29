@@ -71,7 +71,7 @@ const DemoBanner = () => {
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[300px] md:mt-4 md:px-16 gap-6 select-none">
+        <div className="w-full flex flex-col-reverse md:flex-row items-center justify-between min-h-[300px] md:mt-4 md:px-16 gap-6 ">
           {/* Left Content (Text) */}
           <motion.div
             className="flex-1 text-center md:text-center -mt-6 md:ml-40"

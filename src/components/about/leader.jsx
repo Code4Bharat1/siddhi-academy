@@ -67,7 +67,7 @@ const LeaderCard = () => {
         <meta property="og:site_name" content="Siddhi Academy" />
       </Head>
 
-      <main className="min-h-screen p-6 bg-white flex flex-col items-center gap-18 mt-10 select-none">
+      <main className="min-h-screen p-6 bg-white flex flex-col items-center gap-18 mt-10 ">
         <h1 className="text-3xl md:text-5xl font-bold mb-10 text-center">
           Meet Our Leaders
         </h1>

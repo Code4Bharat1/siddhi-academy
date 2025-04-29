@@ -101,7 +101,7 @@ export default function CourseSection() {
         }`}
       >
         <div className="bg-[#0038D1] rounded-2xl flex flex-col md:flex-row overflow-hidden shadow-lg">
-          <div className="p-6 md:p-8 text-white md:w-[100%] space-y-6 select-none">
+          <div className="p-6 md:p-8 text-white md:w-[100%] space-y-6 ">
             <h2 className="text-3xl font-semibold">Why Siddhi Academy?</h2>
             <h3 className="text-2xl font-medium text-blue-100">
               Unlock Your True Potential with Personalized Mentorship

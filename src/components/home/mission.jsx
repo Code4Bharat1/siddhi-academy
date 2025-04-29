@@ -38,7 +38,7 @@ export default function MissionInspirationVision() {
         <link rel="canonical" href="https://yourwebsite.com/mission-vision" />
       </Head>
 
-      <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-30 px-4 py-10 bg-white select-none">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-5 md:gap-30 px-4 py-10 bg-white ">
         {/* Our Mission */}
         <motion.div
           className="w-full md:w-90 p-6 min-h-[300px] bg-[#0038D1] text-white rounded-tr-2xl rounded-bl-2xl transition-all duration-300 hover:bg-[#FF0000] shadow-[-6px_6px_6px_rgba(0,0,0,0.25)] flex flex-col justify-center"

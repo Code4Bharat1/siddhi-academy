@@ -58,18 +58,18 @@ export default function SiddhiSection() {
           initial="hidden"
           animate="visible"
         >
-          <p className="text-sm md:text-xl leading-relaxed select-none">
+          <p className="text-sm md:text-xl leading-relaxed ">
             At <span className="font-semibold text-red-600">Siddhi Academy</span>, your child’s growth and success are at the core of everything we do. Since our inception in 
             <span className="font-semibold text-red-600"> 2008</span>, we’ve built a legacy rooted in trust, dedication, and academic excellence—shaping young minds by helping them balance 
             <span className="font-semibold text-red-600"> knowledge with application, care with collaboration</span>, and 
             <span className="font-semibold text-red-600"> today’s goals with tomorrow’s dreams.</span>
           </p>
-          <p className="text-sm md:text-xl leading-relaxed  select-none">
+          <p className="text-sm md:text-xl leading-relaxed  ">
             Recognized as a leading coaching institute in <span className="font-semibold text-red-600">Thane</span> for 
             <span className="font-semibold text-red-600"> SSC, Commerce, and Arts</span>, Siddhi Academy stands out for its 
             <span className="font-semibold text-red-600"> student-first approach, result-oriented methods,</span> and holistic development programs.
           </p>
-          <p className="text-sm md:text-xl leading-relaxed  select-none">
+          <p className="text-sm md:text-xl leading-relaxed  ">
             At Siddhi Academy, we’re more than educators—we’re 
             <span className="font-semibold text-red-600"> mentors, guides, and a second family</span>. Because real education is about nurturing 
             <span className="font-semibold text-red-600"> confident, capable individuals</span> ready to lead the future.
