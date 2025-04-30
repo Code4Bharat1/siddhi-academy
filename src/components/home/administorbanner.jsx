@@ -5,22 +5,22 @@ import { FaWhatsapp } from "react-icons/fa";
 import { IoMdClose } from "react-icons/io";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
+
 
 const testimonials = [
   {
     quote: `"Siddhi Academy is not just about academics. It's about the personal attention and care they give to each student, helping us grow both intellectually and personally."`,
-    author: "PALLAVI MORE",
+    author: "Samruddhi Mahale",
     image: "/student/student3.jpg",  // Image URL for Pallavi
   },
   {
     quote: `"Many institutions promise results, but Siddhi Academy truly delivers. Their focused approach helped me achieve success beyond what I expected."`,
-    author: "Pooja Mane",
+    author: "Riya malve",
     image: "/student/student5.jpg",  // Image URL for Pooja
   },
   {
     quote: `"I never imagined that Commerce could be so interesting. Siddhi Academy's practical teaching methods and engaging lessons completely changed my perspective."`,
-    author: "RIYA SHETTY",
+    author: "Ekta kedare",
     image: "/student/student4.jpg",  // Image URL for Riya
   },
 ];
