@@ -5,12 +5,13 @@ import Image from 'next/image';
 import Head from 'next/head';
 
 const achievers = [
-  { name: "Riya Shetty", percent: "93%", img: "/student/student4.jpg", width: 130, height: 140 },
-  { name: "Samruddhi M.", percent: "92%", img: "/student/student2.jpg", width: 130, height: 200 },
-  { name: "Pallavi More", percent: "91%", img: "/student/student3.jpg", width: 140, height: 140 },
-  { name: "Ratan K.", percent: "91%", img: "/student/student1.jpg", width: 170, height: 170 },
-  { name: "Pooja M.", percent: "88%", img: "/student/student5.jpg", width: 140, height: 140 },
-  { name: "Rohan K.", percent: "91%", img: "/student/student6.jpg", width: 170, height: 170 },
+ 
+  { name: "Samruddhi Mahale", percent: "92%", img: "/student/student3.jpg", width: 140, height: 140 }, 
+  { name: "Ekta kedare", percent: "91%", img: "/student/student4.jpg", width: 130, height: 140 },
+  { name: "Ratan kavale", percent: "90%", img: "/student/student6.jpg", width: 170, height: 170 },
+  { name: "Pooja mandavkar", percent: "88%", img: "/student/student2.jpg", width: 130, height: 200 },
+  { name: "Riya malve", percent: "87%", img: "/student/student5.jpg", width: 140, height: 140 },
+  { name: "purva yewale", percent: "86%", img: "/student/purva.jpg", width: 140, height: 140 },
 ];
 
 export default function Achievers() {
