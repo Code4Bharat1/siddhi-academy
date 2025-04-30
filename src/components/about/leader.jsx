@@ -67,8 +67,8 @@ const LeaderCard = () => {
         <meta property="og:site_name" content="Siddhi Academy" />
       </Head>
 
-      <main className="min-h-screen p-6 bg-white flex flex-col items-center gap-18 mt-10 ">
-        <h1 className="text-3xl md:text-5xl font-bold mb-10 text-center">
+      <main className=" p-6 bg-white flex flex-col items-center md:gap-18 md:mt-10 ">
+        <h1 className="text-3xl md:text-5xl font-bold md:mb-10 text-center">
           Meet Our Leaders
         </h1>
 
@@ -103,7 +103,7 @@ const LeaderCard = () => {
 
               {/* Foreground */}
               <div className="relative z-10 flex flex-col sm:flex-row gap-8 p-6 rounded-2xl bg-transparent backdrop-blur-sm">
-                <div className="flex flex-col items-center sm:w-1/2 md:w-1/3 md:-mt-14 -top-20 md:top-0">
+                <div className="flex flex-col items-center sm:w-1/2 md:w-1/3  md:-mt-14 -top-50 md:top-0">
                   <Image
                     src={card.image}
                     alt={card.name}

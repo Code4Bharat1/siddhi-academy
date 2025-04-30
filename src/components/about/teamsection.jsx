@@ -92,12 +92,13 @@ export default function TeamCard() {
           </button>
         </div>
 
-        <div className="flex justify-start items-center gap-40 p-4 mt-10 md:mt-20">
+        <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-6 md:gap-40 p-4 mt-10 md:mt-20">
+
           {visibleMembers.map((member, index) => (
             <div
               key={index}
               ref={(el) => (cardRefs.current[index] = el)}
-              className="relative w-[270px] h-[420px] mb-4"
+              className="relative w-[270px] h-[350px] mb-4"
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >

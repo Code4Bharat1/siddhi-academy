@@ -14,8 +14,8 @@ const Footer = () => {
             src="/logo.png" 
             alt="Siddhi Academy Logo" 
             className="h-16 w-auto" 
-            width={64} 
-            height={64} 
+            width={200} 
+            height={100} 
           />
         </div>
 
@@ -27,8 +27,8 @@ const Footer = () => {
               src="/logo.png" 
               alt="Siddhi Academy Logo" 
               className="h-20 w-auto mt-5" 
-              width={80} 
-              height={80} 
+              width={200} 
+              height={100} 
             />
           </div>
 

@@ -24,9 +24,9 @@ export default function QuotePage() {
       </Head>
 
       {/* Quote Box Content */}
-      <main className="flex justify-center items-center mb-1 md:mb-30  px-4">
+      <main className="flex justify-center items-center mb-0  md:mt-0 md:mb-10  px-4">
         <blockquote
-          className="max-w-xl md:max-w-3xl mx-auto shadow-[0_4px_6px_0_rgba(0,0,0,0.3)] p-4 border rounded-md relative bg-white mb-40 md:mb-20"
+          className="max-w-xl md:max-w-3xl mx-auto shadow-[0_4px_6px_0_rgba(0,0,0,0.3)] p-4 border rounded-md relative bg-white mb-10 md:mb-20"
           cite="https://siddhiacademy.in"
         >
           <div className="text-blue-600 text-xl md:text-3xl absolute top-4 left-4" aria-hidden="true">

@@ -55,7 +55,7 @@ export default function AdmissionBanner() {
         <title>Admission Open - Siddhi Academy 2025</title>
       </Head>
 
-      <section className="relative w-full h-[380px] flex items-center justify-center">
+      <section className="relative w-full h-[470px] md:h-[400px] flex items-center justify-center">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -77,7 +77,7 @@ export default function AdmissionBanner() {
               alt="Blue Box"
               width={350}
               height={450}
-              className="w-[120px] sm:w-[300px] md:w-[350px] h-[150px] sm:h-[400px] md:h-[450px]"
+              className="w-[120px] sm:w-[300px] md:w-[350px] h-[150px] sm:h-[400px] md:h-[470px]"
             />
             <div className="absolute top-1/3 text-center px-4">
               <h2 className="text-lg md:text-3xl font-semibold">Admission</h2>

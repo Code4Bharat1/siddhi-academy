@@ -118,7 +118,7 @@ export default function MissionInspirationVision() {
               alt="Smart Study Concept"
               width={70}
               height={80}
-              className="mt-5 md:-mt-1 object-contain"
+              className="mt-6 md:-mt-1 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Smart Study Concept
@@ -136,7 +136,7 @@ export default function MissionInspirationVision() {
               alt="Digitalized classrooms"
               width={100}
               height={100}
-              className="md:mt-0 object-contain"
+              className="mt-6 md:mt-0 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Digitalized classrooms
@@ -154,7 +154,7 @@ export default function MissionInspirationVision() {
               alt="Tests & Assessment"
               width={80}
               height={80}
-              className="mt-4 md:mt-2 object-contain"
+              className="mt-6 md:mt-2  mb-2 md:mb-0 object-contain"
             />
             <p className="text-center text-sm md:text-lg font-medium font-Hind text-black">
               Tests & Assessment
