@@ -11,4 +11,4 @@ Disallow:
 # Allow: /public/
 
 # Sitemap location
-Sitemap: https://seerah.one/sitemap.xml
+Sitemap: https://siddhiacademy/sitemap.xml

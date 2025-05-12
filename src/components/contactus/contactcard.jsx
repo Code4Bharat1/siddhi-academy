@@ -38,7 +38,7 @@ export default function ContactCards() {
               "name": "Siddhi Academy",
               "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "Yogiraj Apartment, Shop No. 4, Kishan Nagar 3, Wagle Estate",
+                "streetAddress": "Yogiraj Apartment, Shop No. 4, Kisan Nagar 3, Wagle Estate",
                 "addressLocality": "Thane West",
                 "addressRegion": "MH",
                 "postalCode": "400604",
@@ -66,7 +66,7 @@ export default function ContactCards() {
             <div className="flex items-start gap-4">
               <PiBuildingsBold className="text-7xl md:text-[50px]" />
               <p className="text-xs md:text-lg">
-                Yogiraj Apartment, Shop No. 4, Kishan Nagar 3, Wagle Estate,
+                Yogiraj Apartment, Shop No. 4,Kisan Nagar 3, Wagle Estate,
                 Thane West <br />
                 400604
               </p>
@@ -76,7 +76,7 @@ export default function ContactCards() {
             <div className="flex items-start gap-4">
               <PiBuildingsBold className="text-7xl md:text-[50px]" />
               <p className="text-xs md:text-lg">
-                Yogiraj Apartment, Shop No. 4, Kishan Nagar 3, Wagle Estate,
+                Yogiraj Apartment, Shop No. 4, Kisan Nagar 3, Wagle Estate,
                 Thane West <br />
                 400604
               </p>

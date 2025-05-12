@@ -13,14 +13,14 @@ const WhatsAppButton = () => {
     <>
       {/* Head Section for SEO */}
       <Head>
-        <title>Contact Us on WhatsApp - Kishan Nagar and Dnyaneshwar Nagar</title>
+        <title>Contact Us on WhatsApp - Kisan Nagar and Dnyaneshwar Nagar</title>
         <meta
           name="description"
-          content="Get in touch with us on WhatsApp for any inquiries. Choose between our Kishan Nagar and Dnyaneshwar Nagar branches."
+          content="Get in touch with us on WhatsApp for any inquiries. Choose between our Kisan Nagar and Dnyaneshwar Nagar branches."
         />
         <meta
           name="keywords"
-          content="WhatsApp, Contact Us, Customer Service, Kishan Nagar, Dnyaneshwar Nagar, Branches, Customer Support"
+          content="WhatsApp, Contact Us, Customer Service, Kisan Nagar, Dnyaneshwar Nagar, Branches, Customer Support"
         />
       </Head>
 
@@ -49,16 +49,16 @@ const WhatsAppButton = () => {
             {/* WhatsApp Branch Buttons */}
             <div className="flex flex-col gap-4 mt-6">
               <a
-                href="https://wa.me/919226524850"
+                href="https://wa.me/917208131213"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 bg-green-500 text-white py-2 px-4 rounded-lg text-lg font-medium hover:bg-green-600"
-                aria-label="Chat with Kishan Nagar Branch on WhatsApp"
+                aria-label="Chat with Kisan Nagar Branch on WhatsApp"
               >
-                <FaWhatsapp size={35} /> Kishan Nagar Branch
+                <FaWhatsapp size={35} /> Kisan Nagar Branch
               </a>
               <a
-                href="https://wa.me/919220169760"
+                href="https://wa.me/919082367246"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-3 bg-green-500 text-white py-2 px-4 rounded-lg text-lg font-medium hover:bg-green-600"

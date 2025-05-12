@@ -63,7 +63,7 @@ const Footer = () => {
                 rel="noopener noreferrer" 
                 className="text-black"
               >
-                Yogiraj Apartment, Shop No. 4, Kishan Nagar 3, Wagle Estate, Thane West 400604
+                Yogiraj Apartment, Shop No. 4, Kisan Nagar 3, Wagle Estate, Thane West 400604
               </a>
             </p>
             <p className="text-md">
@@ -142,7 +142,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-black hover:underline"
               >
-                Yogiraj Apartment, Shop No. 4, Kishan Nagar 3, Wagle Estate, Thane West 400604
+                Yogiraj Apartment, Shop No. 4, Kisan Nagar 3, Wagle Estate, Thane West 400604
               </a>
             </p>
             <p>
