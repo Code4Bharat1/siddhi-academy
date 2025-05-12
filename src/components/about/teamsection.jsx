@@ -42,7 +42,7 @@ export default function TeamCard() {
     {
       name: "Ishwar Rakhme",
       qualification: "B. Com",
-      department: "Maths Department",
+      department: "Advertising Department",
       image: "/sir3.png",
       experience: "2+ Years exp",
       bio: "Brings energy and clarity to every classroom session with real-world examples.",
@@ -67,17 +67,28 @@ export default function TeamCard() {
 
   const scrollToNext = () => {
     const maxIndex = teamMembers.length - cardsToShow;
-    setCurrentIndex((prevIndex) => (prevIndex + 1 > maxIndex ? 0 : prevIndex + 1));
+    setCurrentIndex((prevIndex) =>
+      prevIndex + 1 > maxIndex ? 0 : prevIndex + 1
+    );
   };
 
-  const visibleMembers = teamMembers.slice(currentIndex, currentIndex + cardsToShow);
+  const visibleMembers = teamMembers.slice(
+    currentIndex,
+    currentIndex + cardsToShow
+  );
 
   return (
     <>
       <Head>
         <title>Our Team - Expert Faculty</title>
-        <meta name="description" content="Meet our experienced team members in the Maths and Admin Departments." />
-        <meta name="keywords" content="Faculty, Team, Maths Department, Admin, Education, Experts" />
+        <meta
+          name="description"
+          content="Meet our experienced team members in the Maths and Admin Departments."
+        />
+        <meta
+          name="keywords"
+          content="Faculty, Team, Maths Department, Admin, Education, Experts"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
@@ -93,7 +104,6 @@ export default function TeamCard() {
         </div>
 
         <div className="flex flex-col md:flex-row justify-start items-center md:items-start gap-6 md:gap-40 p-4 mt-10 md:mt-20">
-
           {visibleMembers.map((member, index) => (
             <div
               key={index}
@@ -111,7 +121,13 @@ export default function TeamCard() {
               />
 
               <div className="absolute -top-12 md:top-0 left-4 transform z-20 md:-mt-12">
-                <Image src={member.image} alt={member.name} width={240} height={200} className="w-60 h-50" />
+                <Image
+                  src={member.image}
+                  alt={member.name}
+                  width={240}
+                  height={200}
+                  className="w-60 h-50"
+                />
               </div>
 
               <div className="absolute top-17 left-0 transform w-full px-4 z-20 transition-all duration-300 mt-19">
@@ -134,18 +150,32 @@ export default function TeamCard() {
                     >
                       {member.experience}
                     </div>
-                    <h3 className={`text-lg font-semibold ${hoveredIndex === index ? "text-black" : "text-white"}`}>
+                    <h3
+                      className={`text-lg font-semibold ${
+                        hoveredIndex === index ? "text-black" : "text-white"
+                      }`}
+                    >
                       {member.name}
                     </h3>
-                    <p className={`text-sm ${hoveredIndex === index ? "text-black" : "text-white"}`}>
+                    <p
+                      className={`text-sm ${
+                        hoveredIndex === index ? "text-black" : "text-white"
+                      }`}
+                    >
                       {member.qualification}
                     </p>
-                    <p className={`text-sm ${hoveredIndex === index ? "text-black" : "text-white"}`}>
+                    <p
+                      className={`text-sm ${
+                        hoveredIndex === index ? "text-black" : "text-white"
+                      }`}
+                    >
                       {member.department}
                     </p>
                     <div
                       className={`text-xs mt-2 transition-opacity duration-300 ${
-                        hoveredIndex === index ? "opacity-100 text-black" : "opacity-0 text-white"
+                        hoveredIndex === index
+                          ? "opacity-100 text-black"
+                          : "opacity-0 text-white"
                       }`}
                     >
                       {member.bio}
